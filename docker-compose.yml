@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: UAC_DB
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: UserAccessControl.API/Dockerfile
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DbConnection=Host=db;Port=5432;Database=UAC_DB;Username=postgres;Password=postgres
+    ports:
+      - "5000:8080"
+    restart: unless-stopped
+    entrypoint: ["/bin/sh", "-c", "dotnet UserAccessControl.API.dll"]
+
+
+volumes:
+  postgres-data:

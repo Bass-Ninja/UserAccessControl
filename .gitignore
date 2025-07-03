@@ -1,0 +1,74 @@
+# Build results
+**/bin/
+**/obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# ASP.NET temporary files
+wwwroot/
+*.db
+*.sqlite
+
+# Entity Framework Migrations history
+Migrations/
+
+# Logs
+*.log
+logs/
+
+# Publish output
+publish/
+PublishProfiles/
+
+# Docker
+docker-compose.override.yml
+*.env
+
+# Secrets
+secrets.json
+appsettings.*.json
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Test results
+TestResults/
+*.trx
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# JetBrains Rider local history
+.idea/.idea.LocalHistory/
+
+# StyleCop
+StyleCopReport.xml
+
+# Coverage
+coverage/
+
+# Others
+*.vspscc
+*.vssscc
