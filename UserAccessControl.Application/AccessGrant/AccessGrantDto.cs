@@ -1,4 +1,5 @@
-﻿using UserAccessControl.Application.Resource;
+﻿using System;
+using UserAccessControl.Application.Resource;
 using UserAccessControl.Core.Entities.Enum;
 
 namespace UserAccessControl.Application.AccessGrant;

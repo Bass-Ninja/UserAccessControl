@@ -1,4 +1,6 @@
-﻿namespace UserAccessControl.Application.Resource;
+﻿using System;
+
+namespace UserAccessControl.Application.Resource;
 
 public class ResourceDto
 {
