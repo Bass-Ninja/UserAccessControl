@@ -90,17 +90,17 @@ to view the Swagger UI and test the API endpoints.
 ```bash
 https://localhost:5001/api/auth/login
 ```
-![img.png](img.png)
+![img.png](docs/images/login-endpoint.png)
 
 This returns a token for the fixed user `admin@ninja.si` with Admin role.
 
 2. In Swagger UI, click **Authorize**, paste the token, and confirm.
 
-![img_1.png](img_1.png)
+![img_1.png](docs/images/swagger-auth.png)
 
 3. Now you can call secured endpoints like:
 
-![img_2.png](img_2.png)
+![img_2.png](docs/images/secure-user-endpoint.png)
 
 Note: Only User endpoints cannot be called anonymously.
 
@@ -118,7 +118,7 @@ This will execute all xUnit tests and report the results.
 ### Adding a Resource via Swagger UI
 Below is a screenshot demonstrating how to add a new resource through the Swagger UI:
 
-![img_3.png](img_3.png)
+![img_3.png](docs/images/add-resource.png)
 
 ---
 
