@@ -46,7 +46,7 @@ cd UserAccessControl
 ### 2. Configure PostgreSQL
 
 #### Option A: Run PostgreSQL in Docker (recommended)
-Make sure Docker is running, then:
+Make sure Docker is running. Then, from the root folder of the project (where the docker-compose.yml file is located), run:
 
 ```bash
 docker-compose up -d
