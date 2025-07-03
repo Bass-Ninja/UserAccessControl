@@ -113,6 +113,15 @@ dotnet test
 ```
 This will execute all xUnit tests and report the results.
 
+---
+
+### Adding a Resource via Swagger UI
+Below is a screenshot demonstrating how to add a new resource through the Swagger UI:
+
+![img_3.png](img_3.png)
+
+---
+
 ### Additional Notes
 If you want to run the API without Docker, make sure to have PostgreSQL running locally, update the connection string in appsettings.json accordingly, then run the API with:
 
