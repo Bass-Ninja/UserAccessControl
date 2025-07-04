@@ -88,7 +88,7 @@ to view the Swagger UI and test the API endpoints.
 1. Obtain a JWT token by calling:
 
 ```bash
-https://localhost:5001/api/auth/login
+https://localhost:5000/api/auth/login
 ```
 ![img.png](docs/images/login-endpoint.png)
 
