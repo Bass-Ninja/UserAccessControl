@@ -15,13 +15,11 @@ public class AuthController(IAuthService authService) : ControllerBase
     [HttpPost("login")]
     public IActionResult Login()
     {
-        {
-            // Simulate fixed user
-            string email = "admin@ninja.si";
-            string role = "Admin";
+        // Simulate fixed user
+        string email = "admin@ninja.si";
+        string role = "Admin";
 
-            string token = authService.GenerateToken(email, role);
-            return Ok(new { token });
-        }
+        string token = authService.GenerateToken(email, role);
+        return Ok(new { token });
     }
 }
