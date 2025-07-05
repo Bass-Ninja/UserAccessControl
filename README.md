@@ -77,7 +77,7 @@ The API container is configured to automatically apply EF Core migrations on sta
 
 
 ```bash
-https://localhost:5000/swagger/index.html
+http://localhost:5000/swagger/index.html
 ```
 to view the Swagger UI and test the API endpoints.
 
@@ -88,7 +88,7 @@ to view the Swagger UI and test the API endpoints.
 1. Obtain a JWT token by calling:
 
 ```bash
-https://localhost:5000/api/auth/login
+http://localhost:5000/api/auth/login
 ```
 ![img.png](docs/images/login-endpoint.png)
 
